@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class ticTacToe {
 
     public static void boardReset(int[][] game) {
@@ -11,6 +13,19 @@ public class ticTacToe {
                 System.out.print(game[index1][index2]);
             }
             System.out.println();
+        }
+    }
+    public static void assignPlayer() {
+        Random player=new Random();
+        int playerCheck=player.nextInt(2);
+        if(playerCheck==0)
+        {
+            System.out.println("Player1=X");
+            System.out.println("Player2=O");
+        }else
+        {
+            System.out.println("Player1=O");
+            System.out.println("Player2=X");
         }
     }
     public static void main(String[] args) {
