@@ -28,6 +28,17 @@ public class ticTacToe {
             System.out.println("Player2=X");
         }
     }
+    public static void tossCheck() {
+        Random tossValue=new Random();
+        int checkToss=tossValue.nextInt(2);
+        if(checkToss==0)
+        {
+            System.out.print("Player1");
+        }else
+        {
+            System.out.print("Player2");
+        }
+    }
     public static void main(String[] args) {
         System.out.println("Welcome To TicTacToe Game.");
     }
